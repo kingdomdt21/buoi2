@@ -89,3 +89,18 @@ function dichuyen() {
         vb.style.left = p + "px";
     }, 10);
 }
+function updateTime() {
+    var now = new Date();
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+    var year = now.getFullYear();
+    var hours = ("0" + now.getHours()).slice(-2);
+    var minutes = ("0" + now.getMinutes()).slice(-2);
+    var seconds = ("0" + now.getSeconds()).slice(-2);
+
+    var currentTime = day + "-" + month + "-" + year + " " + hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("currentDateTime").innerHTML = currentTime;
+    
+}
+setInterval(updateTime, 1000);
