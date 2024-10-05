@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+}
+#txt
+{
+    white-space: nowrap;
+    position: absolute;
+    font-size: 40px;
+}
+@keyframes flash {
+    0% {
+        color: red;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+#flashing-text {
+    animation: flash 1s infinite;
+}
+div
+{
+    margin: 10px 0 10px 0;
+}
+h1
+{
+    margin: 0;
+}

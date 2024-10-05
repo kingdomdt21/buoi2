@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+         
+        <div>
+            <h1 id="txt">Hello World!</h1>
+        </div>
+        <div>
+            <img id="den" src="img\dentat.jpg" alt="alt"/>
+        </div>
+        <div>
+            <button id = "bt1" class = "btn-warning" onclick="Display()">Display</button>
+            <button id = "bt2" class = "btn-success" onmousemove="doimau()" onmouseout="macdinh()" onclick="xoa()">Hiển thị</button>
+            <button id = "bt3" class = "btn-info" onclick="tangsize()">Tăng cỡ chữ</button>
+            <button id=  "bt4" class = "btn-info" onclick="giamsize()">Giảm cỡ chữ</button>
+            <button id = "bt5" class = "btn-info" onclick="switchlight()">Công tắc đèn</button>
+            <button id = "bt6" class = "btn-info" onclick="dichuyen()">Di chuyển trái sang phải</button>
+            <button id = "bt7" class = "btn-info" onclick="dichuyenngc()">Di chuyển phải sang trái</button>
+        </div>
+        <div>
+           <h1>Ngày và giờ hiện tại: <span id="currentDateTime"></span></h1>
+        </div>
+    </body>
+</html>
